@@ -20,7 +20,7 @@ def login(request):
             return redirect('login')
 
     else:
-        return render(request,'login.html')    
+        return render(request,'login_register.html')    
 
 def register(request):
 
@@ -30,17 +30,14 @@ def register(request):
         username = request.POST['username']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
-        email = request.POST['email']
+        # email = request.POST['email']
 
         if password1==password2:
             if User.objects.filter(username=username).exists():
                 messages.info(request,'Username Taken')
                 return redirect('register')
-            elif User.objects.filter(email=email).exists():
-                messages.info(request,'Email Taken')
-                return redirect('register')
             else:   
-                user = User.objects.create_user(username=username, password=password1, email=email,first_name=first_name,last_name=last_name)
+                user = User.objects.create_user(username=username, password=password1,first_name=first_name,last_name=last_name)
                 user.save()
                 print('user created')
                 return redirect('login')
@@ -51,7 +48,7 @@ def register(request):
         return redirect('/')
         
     else:
-        return render(request,'register.html')
+        return render(request,'login_register.html')
 
 
 
