@@ -1,0 +1,24 @@
+Aim 1 : Gain Heighest marks to be a valodritian and give speech 
+#25DaysOfMl starting from monday
+
+ML are algorithms that gives you a pattern according to the daa provided
+Feed images to a algorithm and it will make a algorithmic logic by itself to predict the correct answer
+Application of ml:
+Photo tagging in FB
+
+Supervised LEarning:
+When model is trained on the basis of the labled datasets
+Y = f(x) here x denoted input and when you give x ot should give you y 
+
+Un supervisied Learning: 
+Distributed into groups like on the basis of their purchases
+
+Predictor vars : area,location Target : Price 
+
+Classifications: Only used when the output can be Yes or No
+Binary Classifications : only 2 
+Multiple Classifications more than 2 
+Ex: Whether user purchased a item or not ,Image classification
+
+Regression : The goal is to predict the value as much closer to the output
+Whereas in wind speed ,the values can be different from 1 to 3 with float values 
