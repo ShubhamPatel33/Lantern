@@ -1,0 +1,81 @@
+<!--Hello. Welcome to my Meditation App project. 
+This project uses HTML, JS, and CSS to create a timer with video and sound.-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mindful Meditation</title>
+    <link rel="stylesheet" href="{% static 'css/meditation_style.css' %}">
+</head>
+<body>
+
+<h1 class = "title col-xs-6 col-sm-4">Relaxation Page</h1>
+<!--App begins here.-->
+    <div class="app col-xs-6 col-sm-4">
+    
+    <!--Video that will be playing on a loop in the background-->
+        <div class="video-container col-xs-6 col-sm-4 " >
+            <video loop>
+                <source class = "video col-xs-6 col-sm-4" src="{% static 'video/birds.mp4' %}" type="video/mp4"/>
+            </video>
+        </div>
+
+    <!--This section is for time selection.-->
+        <div class="timer col-xs-6 col-sm-4">
+            <button data-time="120">2 Minutes</button>
+            <button data-time="300">5 Minutes</button>
+            <button data-time="600">10 Minutes</button>
+        </div>
+
+    <!--This section is for the play button and all of its features.-->
+        <div class="player col-xs-6 col-sm-4">
+            <audio class="song">
+                <source src="{% static 'sounds/birds.mp3'%}">
+            </audio>
+
+            <img src="{% static 'svg/play.svg' %}" alt="play" class="play col-xs-6 col-sm-4"/>
+
+            <svg class="track-outline col-xs-6 col-sm-4" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+            </svg>
+
+            <svg class="moving-outline col-xs-6 col-sm-4" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+            </svg>
+        </div>
+           <svg  class= "replay"  height="20px" version="1.1" viewBox="0 0 16 20" width="16px" xmlns="http://www.w3.org/2000/svg" 
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#F8F8FF" id="Icons-AV" transform="translate(-2.000000, -127.000000)"><g id="replay" transform="translate(2.000000, 127.000000)"><path d="M8,4 L8,0 L3,5 L8,10 L8,6 C11.3,6 14,8.7 14,12 C14,15.3 11.3,18 8,18 C4.7,18 2,15.3 2,12 L0,12 C0,16.4 3.6,20 8,20 C12.4,20 16,16.4 16,12 C16,7.6 12.4,4 8,4 L8,4 Z" id="Shape"/></g></g></g></svg>
+        
+        <!--This section is for the time display.--> 
+        <br>
+        <br>     
+            <h3 class="time-display col-xs-6 col-sm-4">00:00</h3>
+            
+        
+  
+        
+<!--This section is for all of the sounds.-->
+
+        <div class="sound col-xs-12 col-md-8">
+            <button data-sound="{% static 'sounds/rain.mp3' %}" data-video="{% static 'video/rain.mp4'%}">
+                <img src="{% static 'svg/rain.svg' %}" alt="rain"/>
+            </button>
+            <button data-sound="{% static 'sounds/beach.mp3' %}" data-video="{% static 'video/beach.mp4'%}">
+                <img src="{% static 'svg/beach.svg'%}" alt="beach"/>
+            </button>
+            <button data-sound="{% static 'sounds/birds.mp3'%}" data-video="{% static 'video/birds.mp4'%}">
+                <img src="{% static 'svg/birds.svg'%}" alt="birds"/>
+            </button>
+        </div>
+
+    </div>
+
+
+
+<!--Script-->
+    <script src="{% static 'js/app.js'%}"></script>  
+</body>
+</html>
