@@ -11,6 +11,7 @@ import urllib
 import json 
 from pprint import pprint
 
+from .models import Journal
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="6d2b2b6bc36648b6a1667d90b4415832",
                                                            client_secret="a06408476f1b453b89fba8608604ce0d"))
 
@@ -44,6 +45,16 @@ def songsuggestion(request):
     return render(request, "songsuggestion.html", {"musicData":result})   
 
 
+def diary(request):
+    if request.method== 'POST':
+        title = request.POST['entry-title']
+        content = request.POST['daily-entry']
+        print(title)
+        print(content)
+
+        Journal.objects.create(user = request.user, title=title, content=content)
+    
+    return render(request, "diary.html")
 # import spotipy
 
 
