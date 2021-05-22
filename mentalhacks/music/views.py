@@ -55,6 +55,9 @@ def diary(request):
         Journal.objects.create(user = request.user, title=title, content=content)
     
     return render(request, "diary.html")
+
+def meditation(request):
+    return render(request, "meditation.html")   
 # import spotipy
 
 
