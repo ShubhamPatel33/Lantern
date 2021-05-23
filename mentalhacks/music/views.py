@@ -27,6 +27,8 @@ def contact(request):
 def services(request):
     return render(request, "Services.html")
 
+def pacman(request):
+    return render(request, "pacman.html")
 
 def songsuggestion(request):
     playlist_id = 'spotify:user:spotifycharts:playlist:37i9dQZEVXbJiZcmkrIHGU'
