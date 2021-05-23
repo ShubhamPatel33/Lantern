@@ -1,0 +1,17 @@
+*/.DS_Store
+
+*.DS_Store
+
+.DS_Store
+
+node_modules
+
+ahuna/*
+
+ahunabot/*
+
+__pycache__
+
+ahunabot.pem
+
+*.json
