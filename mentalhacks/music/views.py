@@ -15,6 +15,17 @@ from .models import Journal
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="6d2b2b6bc36648b6a1667d90b4415832",
                                                            client_secret="a06408476f1b453b89fba8608604ce0d"))
 
+def index(request):
+    return render(request, "Home-Page.html")
+
+def aboutus(request):
+    return render(request, "aboutus.html")
+
+def contact(request):
+    return render(request, "Contact-Us.html")
+
+def services(request):
+    return render(request, "Services.html")
 
 
 def songsuggestion(request):
