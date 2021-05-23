@@ -75,7 +75,18 @@ def meditation(request):
 
 def color_game(request):
     return render(request, "color_index.html")
-      
+
+def diary_list(request):
+
+    data = Journal.objects.filter(user = request.user)
+    return render(request, "diary_list.html", {"data":data})   
+
+def diary_single(request, id):
+    print(id)
+    data = Journal.objects.get(id = id)
+    print(data.content)
+    return render(request, "diary_single.html", {"data":data})
+    
 # import spotipy
 
 
