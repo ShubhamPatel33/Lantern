@@ -6,3 +6,9 @@
 <li>Relaxation Page : When you are stressed , Meditation is the best thing to do and hence here we provide you with peaceful environment to meditate with soft background song of nature for your joyful experience.</li>
 <li>Music Recommender : In this module we will suggest some good music straight from Spotify to cheer up your mood .</li>
 
+## Technologies used in it:
+- HTML
+- CSS
+- Javascript
+- Python
+- Linode
