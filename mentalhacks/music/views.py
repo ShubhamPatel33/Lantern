@@ -37,6 +37,7 @@ def songsuggestion(request):
         temp['image'] = track['track']['album']['images'][0]['url']
         temp['artists'] = track['track']['album']['artists'][0]["name"]
         temp['artist_url'] = track['track']['album']['artists'][0]['external_urls']['spotify']
+        temp['songURL'] = track['track']['external_urls']['spotify']
         
         result.append(temp)
         
@@ -57,7 +58,11 @@ def diary(request):
     return render(request, "diary.html")
 
 def meditation(request):
-    return render(request, "meditation.html")   
+    return render(request, "meditation.html")
+
+def color_game(request):
+    return render(request, "color_index.html")
+      
 # import spotipy
 
 
