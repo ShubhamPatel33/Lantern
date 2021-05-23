@@ -1,0 +1,33 @@
+#head{
+    text-align: center;
+    color: #f08282;
+}
+
+.alert-heading{
+    color: darkgray;
+}
+
+#text{
+    color: darkslateblue;
+    font-size: 20px;
+}
+
+#alert-success{
+background-color: aliceblue;
+}
+#main_color{
+    padding-left: 45%;
+    margin-top: 7%;
+    
+    font-size: 80px;
+
+}
+
+.message{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+#body{
+    background-color:#3b4465;
+}
