@@ -35,3 +35,13 @@ and subsequent owner(s) (each and all, an "owner") of an original work of
 authorship and/or a database (each, a "Work")....
 ```
 [Read more..](LICENSE)
+
+## Team
+<a href="https://github.com/PulkitSinghDev"><img src="https://user-images.githubusercontent.com/71369943/115286432-ae6f4600-a16c-11eb-8139-2a6e8533651f.png" width="100px" height="100px"></a>
+<a href="https://github.com/ShubhamPatel33"><img src="https://user-images.githubusercontent.com/71369943/115286407-a8796500-a16c-11eb-8251-350cc0228bd9.png" width="100px" height="100px"></a>
+<a href="https://github.com/aayush1204"><img src="https://avatars.githubusercontent.com/u/50989118?v=4" width="100px" height="100px"></a>
+
+## Reources
+- [LICENSE](LICENSE)
+- [Github Repo](https://github.com/ShubhamPatel33/Lantern)
+- [Slides](https://docs.google.com/presentation/d/1lomezjp0juLodTOt1aOtipy7ZFLBhsbxKI181JhsRNA/edit?usp=sharing)
