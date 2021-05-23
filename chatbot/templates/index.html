@@ -25,7 +25,7 @@
 		<hr />
 		<div class="holder" ng-repeat="msg in conversation track by $index">
 			<div ng-if="msg.author == 'bot'" id="bot-msg">
-				<p id="bot-head">Ahuna:</p>
+				<p id="bot-head">Fryday:</p>
 				<p id="bot">{{msg.text}}</p>
 			</div>
 			<div ng-if="msg.author == 'user'" id="user-msg">
